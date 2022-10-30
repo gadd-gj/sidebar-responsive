@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sidebar</title>
+</head>
+
+<body>
+    <button type="button" class="burger" onclick="toggleSidebar()"></button>
+    <img class="logo" src="./assets/logo.svg" alt="" />
+    <aside class="sidebar">
+        <header class="sidebar-header"></header>
+        <nav>
+            <button type="button">
+                <a href="#home">
+                    <img src="./assets/icon-home.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </button>
+        </nav>
+    </aside>
+
+
+    <section id="home">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae ab quo reprehenderit in laborum aperiam distinctio id rerum! Quo nisi modi quam expedita sunt deserunt ipsa obcaecati odit dolorem?</p>
+    </section>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => {
+            document.body.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>
